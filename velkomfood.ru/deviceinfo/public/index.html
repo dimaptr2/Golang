@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/main.js" ></script>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Beaglebone statistics</title>
+</head>
+
+<body>
+
+<section>
+    <header>
+        <h1 class="firstHeader">Отчет по отгрузкам в коробках</h1>
+    </header>
+</section>
+
+<section>
+    <form action="output.html" method="post">
+        <p>
+            <label for="date_from">С: </label>
+            <input type="date" id="date_from" onclick="getDateFrom();" />
+            <label for="date_to">По: </label>
+            <input type="date" id="date_to" onclick="getDateTo();" />
+            <br/>
+        </p>
+        <p>
+            <input type="submit" value="вывод"  onclick="makeSubmit();" />
+        </p>
+    </form>
+</section>
+
+    <!--<footer>-->
+        <!--<p>Created by <a href="http://www.velkomfood.ru">ООО МК Павловская Слобода</a></p>-->
+    <!--</footer>-->
+
+</body>
+
+</html>

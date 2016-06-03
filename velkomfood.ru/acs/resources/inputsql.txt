@@ -1,0 +1,7 @@
+SELECT regid, uid, doorid, regdate, regdatefull
+FROM GRAPH_FACT_EVENTS
+WHERE uid = ?
+AND doorid = '1'
+AND inouttype = '1'
+AND regdate BETWEEN ? AND ?
+ORDER BY regid
